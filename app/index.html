@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FundingHub - fund or post cool projects</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>FundingHub</h1>
+  <h2>Fund a cool project, or post one of your own. Total projects: <span id="projectCount"></span> </h2>
+  <h3>You have <span class="black"><span id="balance"></span> Eth</span></h3>
+
+<br>
+<h1>Projects you could invest in: </h1>
+<ul id="projectList">
+<li id="element1">Placeholder One</li>
+  <li id="element2">Placeholder Two</li>
+  <li id="element3">Placeholder Three</li>
+</ul>
+
+  <br>
+  <h1>Post Project</h1>
+  <br><label for="deadline">Funding deadline (seconds):</label><input type="text" id="deadline" placeholder="e.g., 3600 (1 hour)"></input>
+  <br><label for="amount">Funding target (Wei):</label><input type="text" id="amount" placeholder="e.g., 100"></input>
+  <br><label for="description">Project description:</label><input type="text" id="description" placeholder="e.g., I will post a photo of my cat on IPFS"></input>
+  <br><br><button id="postProject" onclick="postProject()">Post Project</button>
+  <br><br>
+  <span id="status"></span>
+  <br><br>
+  
+  
+  
+</body>
+</html>
